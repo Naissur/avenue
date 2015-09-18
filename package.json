@@ -1,0 +1,36 @@
+{
+  "name": "HuskyJam-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^11.1.0",
+    "http-server": "^0.8.0",
+    "jade": "^1.11.0",
+    "livereload": "^0.3.7",
+    "node-sass": "^3.3.2",
+    "onchange": "^2.0.0",
+    "sass": "^0.5.0",
+    "watchify": "^3.4.0"
+  },
+  "scripts": {
+    "assets": "cp -r src/assets/* dist/",
+    "js": "./node_modules/browserify/bin/cmd.js src/app/main.js -o dist/scripts/main.js",
+    "js:watch": "./node_modules/watchify/bin/cmd.js src/app/main.js -v -o dist/scripts/main.js",
+    "html": "./node_modules/jade/bin/jade.js src/app/index.jade -o dist/",
+    "html:watch": "./node_modules/jade/bin/jade.js src/app/index.jade -w -o dist/",
+    "css": "./node_modules/node-sass/bin/node-sass src/app/styles.scss dist/styles.css",
+    "css:watch": "./node_modules/node-sass/bin/node-sass -w -r src/app/styles.scss -o dist/",
+    "watch": "npm run js:watch & npm run html:watch & npm run css:watch ",
+    "prebuild": "mkdir -p dist/styles dist/scripts",
+    "build": "npm run js && npm run html && npm run css && npm run assets",
+    "livereload": "livereload dist/ ",
+    "preserver": "npm run build",
+    "server": "./node_modules/http-server/bin/http-server dist/ -p 8080",
+    "predevserver": "npm run build",
+    "devserver": "npm run watch & npm run server & npm run livereload"
+  },
+  "author": "Naissur",
+  "license": "ISC"
+}
