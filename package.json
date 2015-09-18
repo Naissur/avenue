@@ -12,11 +12,13 @@
     "node-sass": "^3.3.2",
     "onchange": "^2.0.0",
     "sass": "^0.5.0",
+    "snapsvg": "^0.4.0",
+    "uglify-js": "^2.4.24",
     "watchify": "^3.4.0"
   },
   "scripts": {
-    "assets": "cp -r src/assets/* dist/",
-    "js": "./node_modules/browserify/bin/cmd.js src/app/main.js -o dist/scripts/main.js",
+    "assets": "cp -r src/assets/ dist/",
+    "js": "./node_modules/browserify/bin/cmd.js src/app/main.js | ./node_modules/uglify-js/bin/uglifyjs -cm > dist/scripts/main.js",
     "js:watch": "./node_modules/watchify/bin/cmd.js src/app/main.js -v -o dist/scripts/main.js",
     "html": "./node_modules/jade/bin/jade.js src/app/index.jade -o dist/",
     "html:watch": "./node_modules/jade/bin/jade.js src/app/index.jade -w -o dist/",
