@@ -9,9 +9,8 @@ module.exports = {
 }
 
 function getTimeLine(){
-    var backdrop = this._scene;
+    var backdrop = this._scene.querySelector('#scene__backdrop');
 
-    //declare animation
     var timeline =  (new TimelineLite())
                         .to(
                             backdrop,
@@ -28,6 +27,11 @@ function getTimeLine(){
 
 function load(element){
     this._scene = element;
+
+    var backdrop = document.createElement('div');
+    backdrop.id = 'scene__backdrop';
+    this._scene.appendChild(backdrop);
+
 
     var deferred = RSVP.defer();
     deferred.resolve();

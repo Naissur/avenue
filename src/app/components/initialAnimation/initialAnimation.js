@@ -1,4 +1,4 @@
-require('snapsvg'); //load Snap
+require('snapsvg');
 var RSVP = require('rsvp');
 
 var StripesAnimation =      require('./stripesAnimation');
@@ -20,7 +20,6 @@ function load(element, callback){
     self._scene = Snap(element);
 
     var backgroundScene = document.createElement('div');
-    backgroundScene.id = 'scene__backdrop';
     element.appendChild(backgroundScene);
 
     var stripesScene = document.createElement('div');
@@ -56,7 +55,5 @@ function getTimeLine(){
 
     return timeline;
 }
-
-//console.log(scene);
 
 
