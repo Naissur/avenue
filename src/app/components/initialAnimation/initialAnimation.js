@@ -11,20 +11,26 @@ module.exports = {
     getTimeLine: getTimeLine,
 
 
-    _timeLine: null,
     _scene : null
 }
 
 
-//loads scene and appends it to the passed element
 function load(element, callback){
     var self = this;
     self._scene = Snap(element);
 
+    var backgroundScene = document.createElement('div');
+    backgroundScene.id = 'scene__backdrop';
+    element.appendChild(backgroundScene);
 
-    var stripesScene = element.querySelector('#scene__stripes');
-    var logoScene = element.querySelector('#scene__logo');
-    var backgroundScene = element.querySelector('#scene__backdrop');
+    var stripesScene = document.createElement('div');
+    stripesScene.id = "scene__stripes";
+    element.appendChild(stripesScene);
+
+    var logoScene = document.createElement('div');
+    logoScene.id = 'scene__logo';
+    element.appendChild(logoScene);
+
 
 
     var stripesPromise = StripesAnimation.load(stripesScene)
@@ -37,22 +43,18 @@ function load(element, callback){
 
 
 function getTimeLine(){
-    var stripesTimeline = StripesAnimation._timeLine;
+    var stripesTimeline = StripesAnimation.getTimeLine();
     var logoTimeline = LogoAnimation.getTimeLine();
     var backgroundTimeline = BackgroundAnimation.getTimeLine();
 
-    var master = new TimelineMax();
+    var timeline = new TimelineMax();
 
-    master.add(stripesTimeline, 0)
+    timeline.add(stripesTimeline, 0)
           .add(logoTimeline, 1)
           .add(backgroundTimeline, 1);
 
 
-    //master.seek(1);
-
-    window.tl = master;
-
-    return master;
+    return timeline;
 }
 
 //console.log(scene);

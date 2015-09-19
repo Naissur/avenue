@@ -1,42 +1,15 @@
 @import "common/common.scss";
 @import "common/preload.scss";
 @import "components/header/header.scss";
+@import "components/initialAnimation/initialAnimation.scss";
 
 body{
     overflow: hidden;
-    //background-color: #111;
 }
 
 .main__content{
     #scene{
         position: relative;
         height: 100vh;
-
-        #scene__backdrop{
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-
-            background: url('/assets/scene_background.jpg');
-            background-size: cover;
-            background-position: center center;
-
-            opacity: 0.01;
-        }
-
-        #scene__stripes{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-        }
-        #scene__logo{
-            position: absolute;
-            top: 200px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
     }
 }

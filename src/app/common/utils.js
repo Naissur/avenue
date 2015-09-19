@@ -14,5 +14,25 @@ module.exports = {
             strokeDashoffset: -offset,
             ease: Power2.easeInOut
         }
+    },
+
+
+
+    padNumber: function(a, b, n){
+        if( typeof n !== 'number'){ return n; }
+
+        if(a > b){
+            return n;
+        }
+
+        if(n < a){
+            return a;
+        }
+
+        if(n > b){
+            return b;
+        }
+
+        return n;
     }
 }

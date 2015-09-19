@@ -1,5 +1,6 @@
 var RSVP = require('rsvp');
 var InitialAnimation = require('../initialAnimation/initialAnimation.js');
+var Utils = require('../../common/utils.js');
 
 var Storage = require('../storage/storage');
 
@@ -11,6 +12,11 @@ module.exports = {
     seekToNext: seekToNext,
     seekToPrev: seekToPrev,
 
+
+    hasAnimationPassed: hasAnimationPassed,
+    saveAnimationPassed: saveAnimationPassed,
+
+    saveAnimationPassed: saveAnimationPassed,
 
     _timeLine: null
 }
@@ -25,28 +31,47 @@ function load(){
                         self._timeLine
                             .addLabel('initialAnimation')
                             .add(InitialAnimation.getTimeLine())
+                            .call(self.saveAnimationPassed)
+                            .addLabel('start')
                             .addLabel('aboutUs');
                     });
     return promise;
 }
 
-function seekRelative(seconds){
+
+function saveAnimationPassed(){
+    Storage.setItem('initial_animation_passed', 'true');
+}
+
+function hasAnimationPassed(){
+    return (Storage.getItem('initial_animation_passed') == 'true');
+}
+
+
+function play(){
+    if(!this._timeLine){ return; };
+    
+    this._timeLine.play();
+
+
+    if(this.hasAnimationPassed()){
+        this._timeLine.seek('start');
+    }
+}
+
+
+function seekRelative(seconds, scale){
     if(!this._timeLine){ return; };
 
     var self = this;
 
     var currentTime = self._timeLine.time()
-    var newTime = currentTime + seconds;
+    var newTime = Utils.padNumber(0, Infinity, currentTime + seconds);
 
-    if(newTime > 0){
-        self._timeLine .tweenTo(newTime, {
-            ease: Power2.easeOut
-        });
-    }else{
-        self._timeLine .tweenTo(0, {
-            ease: Power2.easeOut
-        });
-    }
+    self._timeLine .tweenTo(newTime, {
+        timeScale: scale,
+        ease: Power2.easeOut
+    });
 }
 
 function seekToNext(){
@@ -54,8 +79,8 @@ function seekToNext(){
 
     var labelAfter = this._timeLine.getLabelAfter();
 
-    if(labelAfter == 'aboutUs'){
-        this.seekRelative(1.0);
+    if(labelAfter == 'start'){
+        this.seekRelative(2.0, 2.0);
         return;
     }
 
@@ -73,8 +98,8 @@ function seekToPrev(){
     var labelAfter = this._timeLine.getLabelAfter();
     var labelBefore = this._timeLine.getLabelBefore();
 
-    if(currentTime < this._timeLine.getLabelTime('aboutUs')){
-        this.seekRelative(-1.0);
+    if(currentTime < this._timeLine.getLabelTime('start')){
+        this.seekRelative(-1.0, 1.0);
         return;
     }
 
@@ -94,10 +119,4 @@ function reverse(){
     this._timeLine.tweenTo(0.0, {
         ease: Power2.easeOut
     });
-}
-
-function play(){
-    if(!this._timeLine){ return; };
-
-    this._timeLine.play();
 }
