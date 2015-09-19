@@ -34,15 +34,15 @@
       <g
          id="logo__a">
         <path
-           d="m 18,1022.3622 20,-45.00006 10,0 20,45.00006"
+           d="m 68,1022.3622 -20,-45.00006 -10,0 -20,45.00006"
            id="path4019"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 23,1022.3622 18,-40.00006 2,0"
+           d="m 43,982.36214 -2,0 -18,40.00006"
            id="path4021"
            style="fill:none;stroke:#1ca4c7;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 43,982.36214 2,0 17,40.00006"
+           d="m 62,1022.3622 -17,-40.00006 -2,0"
            id="path4023"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
@@ -50,30 +50,30 @@
            id="path4029"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 31,1006.3622 24,0"
+           d="m 55,1006.3622 -24,0"
            id="path4031"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 30,1022.3622 4,-11 18,0 5,11"
+           d="m 57,1022.3622 -5,-11 -18,0 -4,11"
            id="path4033"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       </g>
       <g
          id="logo__v">
         <path
-           d="m 82,978.36214 19,44.00006 10,0 19,-43.00006"
+           d="m 130,979.36214 -19,43.00006 -10,0 -19,-44.00006"
            id="path4035"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 88,978.36214 17,39.00006 1,0"
+           d="m 106,1017.3622 -1,0 -17,-39.00006"
            id="path4037"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 93,978.36214 13,30.00006 13,-30.00006"
+           d="M 119,978.36214 106,1008.3622 93,978.36214"
            id="path4039"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 107,1017.3622 0.96162,-0.01 17,-39.00006"
+           d="m 124.96162,978.35214 -17,39.00006 -0.96162,0.01"
            id="path4043"
            style="fill:none;stroke:#d22983;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       </g>
@@ -103,38 +103,38 @@
       <g
          id="logo__n">
         <path
-           d="m 216,1022.3622 0,-44.00006 10,0 20,27.00006 0,-27.00006"
+           d="m 246,978.36214 0,27.00006 -20,-27.00006 -10,0 0,44.00006"
            id="path4055"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 248,1017.3622 3,0 0,-39.00006"
+           d="m 251,978.36214 0,39.00006 -3,0"
            id="path4059"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 221,1022.3622 0,-40.00006 2,0 25,35.00006"
+           d="m 248,1017.3622 -25,-35.00006 -2,0 0,40.00006"
            id="path4057"
            style="fill:none;stroke:#d22983;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 225,1022.3622 0,-27.00007 20,27.00007 11,0 0,-44.00006"
+           d="m 256,978.36214 0,44.00006 -11,0 -20,-27.00007 0,27.00007"
            id="path5617"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       </g>
       <g
          id="logo__u">
         <path
-           d="m 284,978.36214 0,39.00006 5,5 29,0 5,-5 0,-39.00006"
+           d="m 323,978.36214 0,39.00006 -5,5 -29,0 -5,-5 0,-39.00006"
            id="path4063"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 289,978.36214 0,37.00006 3,3"
+           d="m 292,1018.3622 -3,-3 0,-37.00006"
            id="path4065"
            style="fill:none;stroke:#2b9abc;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 293,978.36214 0,34.00006 20,0 0,-34.00006"
+           d="m 313,978.36214 0,34.00006 -20,0 0,-34.00006"
            id="path4067"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <path
-           d="m 293,1018.3622 22,0 3,-3 0,-37.00006"
+           d="m 318,978.36214 0,37.00006 -3,3 -22,0"
            id="path4069"
            style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       </g>
