@@ -1,5 +1,18 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'sans-serif';
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.commonWrapper{
+    max-width: 1000px;
+
+    margin: auto;
 }

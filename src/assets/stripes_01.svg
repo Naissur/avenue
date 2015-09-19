@@ -7,13 +7,24 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="1024"
-   height="1000"
+   height="800"
+   viewBox="0 0 1024 800"
    id="svg2">
   <defs
-     id="defs4" />
+     id="defs4">
+    <clipPath
+       id="clipPath3777">
+      <rect
+         width="960"
+         height="890"
+         x="380"
+         y="-227.63741"
+         id="rect3779"
+         style="color:#000000;fill:#000000;fill-opacity:0.4840183;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </clipPath>
+  </defs>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -27,59 +38,50 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-52.362183)"
+     transform="translate(0,-252.36218)"
      id="layer1">
-    <rect
-       width="290"
-       height="380"
-       x="339.5"
-       y="-98.137817"
-       id="stripes_01__mask"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <g
+       transform="translate(0,199.99958)"
        id="stripes_01">
+      <rect
+         width="290"
+         height="380"
+         x="339.5"
+         y="-99.782074"
+         id="stripes_01__mask"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <path
          d="m 465,282.36218 10,0 -50,380 -40,0 z"
-         id="sripes_01__left"
+         id="stripes_01__left"
          style="fill:#3fefc2;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0" />
       <path
          d="m 480,282.36218 10,0 20,380 -40,0 z"
-         id="sripes_01__center"
+         id="stripes_01__center"
          style="fill:#3fefc2;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0" />
       <path
          d="m 495,282.36218 10,0 100,380 -45,0 z"
-         id="sripes_01__right"
+         id="stripes_01__right"
          style="fill:#3fefc2;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0" />
     </g>
-    <image
-       xlink:href="file:///home/naissur/Pictures/anim_A.png"
-       x="-1725.5715"
-       y="112.85571"
-       width="1366"
-       height="768"
-       transform="matrix(0.85886453,0.5122028,-0.5122028,0.85886453,0,0)"
-       id="image3875" />
     <g
-       id="logo">
-      <path
-         d="M 1309.585,662.56059 960,-193.46909 l -197.04676,0 L 405,662.36218"
-         id="logo__outer"
-         style="fill:none;stroke:#3fefc2;stroke-width:46;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       transform="translate(0,199.99958)"
+       clip-path="url(#clipPath3777)"
+       id="A_logo">
       <path
          d="m 748.48494,243.44278 99.38759,-220.381178 17.28481,0 86.42397,220.381178 z"
-         id="logo__triangle"
+         id="A_logo__triangle"
          style="fill:#3fefc2;fill-opacity:1;stroke:#000000;stroke-width:0.86423999;stroke-opacity:0" />
       <path
-         d="m 1223.161,662.56059 -325.3863,-773.92689 -80.37431,0 -346.12813,773.92689"
-         id="logo__middle"
+         d="m 1225.1711,677.97098 -327.3964,-789.33728 -80.37431,0 -326.46653,782.6917"
+         id="A_logo__middle"
          style="fill:none;stroke:#3fefc2;stroke-width:46;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <path
          d="M 1071.65,312.39998 640,312.36218"
-         id="logo__middle_branch"
+         id="A_logo__middle_branch"
          style="fill:none;stroke:#3fefc2;stroke-width:46;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <path
-         d="m 1130,662.36218 -110,-270 -340,0 -117.98255,270.19842"
-         id="logo__bottom"
+         d="M 1134.3551,677.10255 1020,392.36218 l -340,0 -98.79473,278.25257"
+         id="A_logo__bottom"
          style="fill:none;stroke:#3fefc2;stroke-width:46;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <rect
          width="280"
@@ -87,8 +89,12 @@
          x="469.79709"
          y="-332.07532"
          transform="matrix(0.91016941,0.41423622,-0.41423622,0.91016941,0,0)"
-         id="logo__triangle_mask"
+         id="A_logo__triangle_mask"
          style="color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         d="m 1322.9533,681.53091 -360.00006,-875 -200,0 -350,865"
+         id="A_logo__outer"
+         style="fill:none;stroke:#3fefc2;stroke-width:46;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
   </g>
 </svg>

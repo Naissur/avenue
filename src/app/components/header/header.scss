@@ -4,8 +4,44 @@
     left: 0;
     right: 0;
 
-    height: 60px;
+    z-index: 1;
+
+    height: 50px;
 
     color: #eee;
     background-color: #333;
+
+    .header__logo{
+        display: inline-block;
+        vertical-align: top;
+
+        height: 50px;
+        margin-left: 20px;
+        margin-top: 4px;
+    }
+
+
+    .header__links{
+         display: inline-block;
+         vertical-align: top;
+         margin-left: 30px;
+
+        .header__links__item{
+            display: inline-block;
+            padding: 17px 20px;
+            height: 50px;
+
+            font-size: 14px;
+            text-transform: uppercase;
+
+            cursor: pointer;
+            transition: all 0.2s;
+
+            color: #eee;
+
+            &:hover{
+                background-color: rgba(#fff, 0.1);
+            }
+        }
+    }
 }
